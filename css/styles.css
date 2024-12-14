@@ -12,7 +12,7 @@
   
   header {
     text-align: center;
-    background-color: #0077ff;
+    background-color: #415a45;
     color: white;
     padding: 1rem;
     margin-bottom: 1rem;
@@ -39,7 +39,7 @@
   }
   
   /* Section Title */
-  .title {
+  .title1 {
     position: absolute;
     top: 0;
     right: 0;
@@ -49,7 +49,29 @@
     font-size: 0.9rem;
     font-weight: bold;
   }
-  
+
+  .title2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #08b1e9;
+    color: white;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+
+  .title3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ff08a0;
+    color: white;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+
   /* Mobile Styles (Default) */
   .box {
     width: 100%; /* Full width */
