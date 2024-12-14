@@ -1,0 +1,85 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  header {
+    text-align: center;
+    background-color: #0077ff;
+    color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden; /* Clear floats */
+  }
+  
+  .box {
+    background-color: #f0f0f0;
+    border: 1px solid #ff9e01;
+    margin-bottom: 1rem;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    position: relative; /* Required for the title */
+    float: left; /* Floats for layout */
+    text-align: justify;
+  }
+  
+  /* Section Title */
+  .title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ff9e01;
+    color: white;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  
+  /* Mobile Styles (Default) */
+  .box {
+    width: 100%; /* Full width */
+  }
+  
+  /* Tablet Styles (768px - 991px) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .box:nth-child(1),
+    .box:nth-child(2) {
+      width: 48%; /* Half width */
+      margin-right: 2%; /* Add spacing between columns */
+    }
+  
+    .box:nth-child(2) {
+      margin-right: 0; /* Remove margin from the last item in the row */
+    }
+  
+    .box:nth-child(3) {
+      width: 100%; /* Full width for the third section */
+    }
+  }
+  
+  /* Desktop Styles (≥992px) */
+  @media (min-width: 992px) {
+    .box {
+      width: 32%; /* Three equal columns */
+      margin-right: 2%; /* Add spacing */
+    }
+  
+    .box:nth-child(3) {
+      margin-right: 0; /* Remove margin for the last column */
+    }
+  }
